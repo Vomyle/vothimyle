@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Howello</title>
+    <link rel="icon" href="img/9df62f1dea38999f7cfbedc1b6ff3db0.jpg">
+    <link rel="stylesheet" href="bootstrap-5.1.0-dist/bootstrap-5.1.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/labthuchanh.css" type="text/css">
+
+    <link rel="stylesheet" href="js/main.js">
+    <link rel="stylesheet" type="text/css" href="slick/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-1.8.1/slick/slick-theme.css" />
+    <script src="js/wow.min.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 50) {
+                    $('#header-bottom').css({
+                        "top": 0,
+                        "background": "white",
+                        "opacity": 0.8,
+                        "position": "fixed",
+                        "z-index": 1,
+                        "padding-top": 0,
+                        "right": 0,
+                        "left": 0,
+
+
+                    });
+
+                }
+                if ($(this).scrollTop() < 50) {
+                    $('#header-bottom').css({
+                        "position": "relative"
+                    });
+
+                }
+
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#gototop").hide()
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 100) {
+                    $("#gototop").show("slow")
+
+                } else {
+                    $("#gototop").hide()
+
+                }
+            })
+            $("#gototop").click(function() {
+                $("html, body").animate({
+                    scrollTop: 0
+                })
+            })
+        })
+    </script>
+</head>
+
+<body style="position: relative;" class="container-fluid">
+    <div>
+        <a href="javascript:;" id="gototop"><i class="gototop fas fa-angle-up"></i> </a>
+    </div>
+    <section class="header">
+        <div id="container">
+            <div id="header-top">
+                <div id="contact-address">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:0769220162">076 922 0162</a>
+                    <i class="far fa-envelope"></i>
+                    <a href="mailto:demonhunterg@gmail.com">demonhunterg@gmail.com</a>
+                    <!-- mailto: thay cho http -->
+                </div>
+                <div id="icon-header">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-pinterest-square"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+            </div>
+
+            <div id="header-bottom">
+                <label id="icon-header-bottom" for="nav-mobile-input"><i
+                        class="bar-btn bar-btn fas fa-bars"></i></label>
+                <input type="checkbox" name="" class="nav-input" id="nav-mobile-input">
+                <img height="90" style="    object-fit: cover;" src="img/logo.png" class="header_logo" alt="Howello">
+
+                <nav class="nav__pc">
+                    <span class="text-homepage"><a href="https://vomyle.github.io/howello.io/index.html" style="color: gold;">Trang chủ</a></span>
+                    <span><a href="https://vomyle.github.io/howello.io/introduce.html">Giới thiệu</a></span>
+                    <span><a href="https://vomyle.github.io/howello.io/room.html">Phòng</a></span>
+                    <span><a href="https://vomyle.github.io/howello.io/news.html" class="text-news">Tin tức</a></span>
+                    <span class="text__contact--gold"><a href="https://vomyle.github.io/howello.io/contact.html">Liên hệ</a></span>
+                    <span><a href="labthuchanh.html">thuchanh</a></span>
+                    <i class="search-header fas fa-search">
+
+                        <div id="input-search">
+                            <input type="text" placeholder="tìm kiếm.....">
+
+
+                            <i class="fas fa-search"></i>
+            </div>
+            </i>
+
+            <button id="btn-setroom" class="btn btn-warning">Đặt phòng</button>
+            </nav>
+
+            <nav class="nav__tablet">
+
+                <div id="nav-tablet">
+                    <div id="input-search">
+                        <div class="input-parent"><input type="text" placeholder="Tìm kiếm....."></div>
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="nav-child__tablet">
+                        <span class="text-homepage"><a href="https://vomyle.github.io/howello.io/index.html">Trang chủ</a></span>
+                        <span><a href="https://vomyle.github.io/howello.io/introduce.html">Giới thiệu</a></span>
+                        <span><a href="https://vomyle.github.io/howello.io/room.html">Phòng</a></span>
+                        <span><a href="https://vomyle.github.io/howello.io/news.html" class="text-news">Tin tức</a></span>
+                        <span class="text__contact--gold"><a href="https://vomyle.github.io/howello.io/contact.html">Liên hệ</a></span>
+                        <span>Đăng nhập</span>
+                    </div>
+                    <div id="icon-header">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-pinterest-square"></i>
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="hollow"></div>
+            <label for="nav-mobile-input" class="nav-overlay">
+                    <i class="close fas fa-times"></i>
+                </label>
+        </div>
+        </div>
+    </section>
+
+    <div>
+        <ul class="lab">
+            <div style="flex:1;">
+                <li>lab01
+                    <ol>
+                        <li type="circle">lab1_1</li>
+                        <li type="circle"><a href="/lab1/lab1_vidu2.html">lab1_2</a></li>
+                    </ol>
+                </li>
+                <li>lab02
+                    <ol>
+                        <li type="circle"><a href="/lab2/lab2_bai1.html">lab2_1</a></li>
+                        <li type="circle"><a href="/lab2/lab2_bai2.html">lab2_2</a></li>
+                    </ol>
+                </li>
+                <li><a href="/lab3/lab3_bai1.html">lab03</a></li>
+                <li><a href="/lab4/lab4_bai2.html">lab04</a></li>
+                <li><a href="/lab5/lab5_bai1.html">lab05</a></li>
+            </div>
+            <div style="flex:1;">
+                <li><a href="/lab6/lab6_bai1.html">lab06</a></li>
+                <li><a href="/lab7/lab7_bai1.html">lab07</a></li>
+                <li><a href="/lab8/lab8_bai1.html">lab08</a></li>
+                <li>lab09</li>
+            </div>
+        </ul>
+    </div>
+</body>
+
+</html>

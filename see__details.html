@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliver Room - Howello</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/see_details.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap-5.1.0-dist/bootstrap-5.1.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-1.8.1/slick/slick-theme.css" />
+    <script src="js/wow.min.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 50) {
+                    $('#header-bottom').css({
+                        "top": 0,
+                        "background": "white",
+                        "opacity": 0.8,
+                        "position": "fixed",
+                        "z-index": 1,
+                        "padding-top": 0,
+                        "right": 0,
+                        "left": 0,
+
+
+                    });
+
+                }
+                if ($(this).scrollTop() < 50) {
+                    $('#header-bottom').css({
+                        "position": "relative"
+                    });
+
+                }
+
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#gototop").hide()
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 100) {
+                    $("#gototop").show("slow")
+
+                } else {
+                    $("#gototop").hide()
+
+                }
+            })
+            $("#gototop").click(function() {
+                $("html, body").animate({
+                    scrollTop: 0
+                })
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div>
+        <a href="javascript:;" id="gototop"><i class="gototop fas fa-angle-up"></i> </a>
+    </div>
+    <section class="header">
+        <div id="container">
+            <div id="header-top">
+                <div id="contact-address">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:0769220162">076 922 0162</a>
+                    <i class="far fa-envelope"></i>
+                    <a href="mailto:demonhunterg@gmail.com">demonhunterg@gmail.com</a>
+                    <!-- mailto: thay cho http -->
+                </div>
+                <div id="icon-header">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-pinterest-square"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+            </div>
+
+            <div id="header-bottom">
+                <label id="icon-header-bottom" for="nav-mobile-input"><i
+                        class="bar-btn bar-btn fas fa-bars"></i></label>
+                <input type="checkbox" name="" class="nav-input" id="nav-mobile-input">
+                <img src="img/logo.png" class="header_logo" alt="Howello">
+
+                <nav class="nav__pc">
+                    <span class="text-homepage"><a href="https://vomyle.github.io/howello.io/index.html">Trang
+                            chủ</a></span>
+                    <span class="text-introduce"><a href="https://vomyle.github.io/howello.io/introduce.html"></a> Giới
+                        thiệu</span>
+                    <span><a href="https://vomyle.github.io/howello.io/room.html">Phòng</a></span>
+                    <span><a href="https://vomyle.github.io/howello.io/news.html" class="text-news">Tin tức</a></span>
+                    <span><a href="https://vomyle.github.io/howello.io/contact.html" class="text__contact--gold">Liên
+                            hệ</a></span>
+                    <span><a href="labthuchanh.html">thuchanh</a></span>
+                    <i class="search-header fas fa-search">
+
+                        <div id="input-search">
+                            <input type="text" placeholder="tìm kiếm.....">
+
+
+                            <i class="fas fa-search"></i>
+            </div>
+            </i>
+
+            <button id="btn-setroom" class="btn btn-warning">Đặt phòng</button>
+            </nav>
+
+            <nav class="nav__tablet">
+
+                <div id="nav-tablet">
+                    <div id="input-search">
+                        <div class="input-parent"><input type="text" placeholder="Tìm kiếm....."></div>
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="nav-child__tablet">
+                        <span class="text-homepage"><a href="https://vomyle.github.io/howello.io/index.html">Trang
+                                    chủ</a></span>
+                        <span class="text-introduce"><a
+                                    href="https://vomyle.github.io/howello.io/introduce.html">Giới thiệu</a></span>
+                        <span><a href="https://vomyle.github.io/howello.io/room.html">Phòng</a></span>
+                        <span><a href="https://vomyle.github.io/howello.io/news.html" class="text-news">Tin
+                                    tức</a></span>
+                        <span><a href="https://vomyle.github.io/howello.io/contact.html"
+                                    class="text__contact--gold">Liên hệ</a></span>
+                        <span><a href="labthuchanh.html">thuchanh</a></span>
+                        <span>Đăng nhập</span>
+                    </div>
+                    <div id="icon-header">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-pinterest-square"></i>
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="hollow"></div>
+            <label for="nav-mobile-input" class="nav-overlay">
+                    <i class="close fas fa-times"></i>
+                </label>
+        </div>
+        </div>
+    </section>
+    <section id="img-behind-header">
+        <img src="img/nhahang.jpg">
+        <div class="text-behind-header">
+            <h4>SLIVER ROOM</h4>
+            <a href="https://vomyle.github.io/howello.io/index.html">TRANG CHỦ</a>
+            <span class="separator">/</span>
+            <span class="text-introduce-behindheader">SLIVER ROOM</span>
+
+        </div>
+    </section>
+    <section class="img__change">
+        <script>
+            function changeimg(obj) {
+                var path = obj.src
+                var mainImg = document.getElementById("img__main")
+                mainImg.src = path
+            }
+        </script>
+        <script>
+            $(document).ready(function() {
+                var stt = 0;
+                starImage = $("img.silde:first").attr("stt");
+                endImg = $("img.slide:last").attr("stt")
+                $("img.slide").each(function() {
+                    if ($(this).is(':visible'))
+                        stt = $(this).attr("stt")
+
+                })
+                $("#next").click(function() {
+                    next = ++stt;
+                    $("img.slide").hide();
+                    $("img.slide").eq(next).show();
+                    if (stt == endImg) {
+                        stt = -1
+                    }
+                })
+                $("#prev").click(function() {
+                    if (stt == 0) {
+                        stt = endImg;
+                        prev = stt++
+                    }
+                    prev = --stt
+
+                    $("img.slide").hide();
+                    $("img.slide").eq(prev).show();
+
+
+                })
+            })
+        </script>
+        <div class="row">
+            <div class="col-lg-8">
+
+                <div class="col-xl-8__child">
+
+                    <img class="slide" src="img/roomblue.jpg" stt="0" id="img__main">
+                    <img class="slide" src="img/roomwhite.jpg" stt="1" style="display: none;">
+                    <img class="slide" src="img/roomred.jpg" stt="2" style="display: none;">
+
+                    <i id="prev" class="back__left far fa-chevron-circle-left"></i>
+                    <i id="next" class="back__right  far fa-chevron-circle-right"></i>
+
+                </div>
+
+                <div class="thumb">
+                    <div class="thumb__parent"> <img src="img/roomblue.jpg" onclick="changeimg(this)" class="thumb__child"></div>
+                    <div class="thumb__parent"><img src="img/roomwhite.jpg" class="thumb__child" onclick="changeimg(this)"></div>
+                    <div class="thumb__parent"><img src="img/roomred.jpg" class="thumb__child" onclick="changeimg(this)"></div>
+                </div>
+                <div>
+                    <h1>Silver Room</h1>
+                    <p class="price"><span>50$</span> / đêm</p>
+                    <p class="start">Bắt đầu hoạt động từ tháng 5 năm 2004, Mona Media Resort, Mũi Né, Phan Thiết tạo nên sự khác biệt trên nhiều phương diện. Đây là khu nghỉ dưỡng duy nhất tại Việt Nam cung cấp chương trình “Tất cả trong một”, Tiệc phô mai và rượu đãi
+                        khách miễn phí, Các bài hát vui tươi, sôi động do hai ban nhạc của khu nghỉ dưỡng trình bày và chương trình Dạo bộ Làng Chài và Chợ Mũi Né hàng ngày. Khác với các khu nghỉ dưỡng khác dọc theo bờ biển Phan Thiết, Mona Media Resort
+                        đủ điều kiện để giúp bạn tận hưởng những phút giây thư giãn thoải mái, lấy lại năng lượng sau khoảng thời gian làm việc vất vả.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="form">
+                    <form class="wow fadeInRight" data-wow-duration="2s">
+                        <h1 class="title-form">Đặt phòng</h1>
+                        <div class="form-group">
+                            <label for="pwd">Họ & Tên</label>
+                            <input type="text" placeholder="  __">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Số điện thoại</label>
+                            <input type="text" placeholder="  __">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Ngày nhận</label>
+                            <input type="text" placeholder="  dd/mm/yyyy">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Ngày trả</label>
+                            <input type="text" placeholder="  dd/mm/yyyy">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Số người</label>
+                            <input type="text" placeholder="  __">
+                        </div>
+                        <div id="btn-form">
+                            <button class="btn btn-dark">Gửi</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="footer">
+        <div class="row" id="footer">
+            <div class="col-md-6 col-sm-6">
+
+                <div class="">
+                    <img src="img/logo_footer.png" class="logo-footer">
+                    <p>Đến với Khu nghỉ dưỡng Premier Village Mona Media, quý khách sẽ được trải nghiệm dịch vụ Spa cao cấp, trung tâm thể hình hiện đại và các hoạt động giải trí trên biển</p>
+                    <div class="icon-logo-footer">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                </div>
+
+                <div id="contact" class="col-md-6">
+                    <div id="contact-child">
+                        <h5>liên hệ</h5>
+                        <div class="hollow"></div>
+                        <div id="address">
+                            <i class="fas fa-map-marker-times"></i>
+
+                            <p>319 C16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</p>
+
+                        </div>
+                        <div id="telephone">
+                            <i class="fas fa-tty"></i>
+                            <a href="tel:0769220162">076 922 0162</a>
+                        </div>
+                        <div id="email">
+                            <i class="fad fa-envelope-open"></i>
+                            <p>
+                                <a href="mailto:demonhunterg@gmail.com">demonhunterg@gmail.com</a>
+                                <br>
+                                <a href="mailto:mon@mona.media">mon@mona.media</a>
+                            </p>
+                        </div>
+                        <div id="chat">
+                            <i class="fab fa-skype"></i>
+                            <div>
+                                <a href="skype:demonhunterp?chat">demonhunterp</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6 col-sm-6 final-footer">
+
+                <div id="link">
+                    <div id="link-child">
+                        <h5>liên kết</h5>
+                        <div class="hollow"></div>
+                        <ul>
+                            <li class="text-homepage">Trang chủ</li>
+                            <li>Giới thiệu</li>
+                            <li>Cửa hàng</li>
+                            <li>Tin tức</li>
+                            <li>Liên hệ</li>
+                        </ul>
+                        <button class="btn btn-warning">Đặt phòng</button>
+                    </div>
+                </div>
+                <div class="img">
+                    <div class="img-child">
+                        <h5>hình ảnh</h5>
+                        <div class="hollow"></div>
+                        <div class="img-footer">
+                            <div>
+                                <img src="img/hinh2.png">
+                                <img src="img/hinh2.png">
+                                <img src="img/hinh2.png">
+                            </div>
+                            <div class="img-footer-child">
+                                <img src="img/hinh2.png">
+                                <img src="img/hinh2.png">
+                                <img src="img/hinh2.png">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- licensse:bản quyền -->
+        <div id="license">
+
+            <div class="license-child">
+                © Bản quyền thuộc về . Thiết kế website
+                <img src="http://mona-media.com/logo.png" alt="MonaMedia">
+                <a href=" " title="Mona Media"><strong>Mona Media</strong></a> </công>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>

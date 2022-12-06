@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phòng-Howello</title>
+    <link rel="stylesheet" href="bootstrap-5.1.0-dist/bootstrap-5.1.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="icon" href="img/spa.jpg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/rom.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-1.8.1/slick/slick-theme.css" />
+    <script src="js/wow.min.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 50) {
+                    $('#header-bottom').css({
+                        "top": 0,
+                        "background": "white",
+                        "opacity": 0.8,
+                        "position": "fixed",
+                        "z-index": 1,
+                        "padding-top": 0,
+                        "width": "100%",
+
+                    });
+
+                }
+                if ($(this).scrollTop() < 50) {
+                    $('#header-bottom').css({
+                        "position": "relative"
+                    });
+
+                }
+
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#gototop").hide()
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 100) {
+                    $("#gototop").show("slow")
+
+                } else {
+                    $("#gototop").hide()
+
+                }
+            })
+            $("#gototop").click(function() {
+                $("html, body").animate({
+                    scrollTop: 0
+                })
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div>
+        <a href="javascript:;" id="gototop"><i class="gototop fas fa-angle-up"></i> </a>
+    </div>
+    <section class="header">
+        <div id="container">
+            <div id="header-top">
+                <div id="contact-address">
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:0769220162">076 922 0162</a>
+                    <i class="far fa-envelope"></i>
+                    <a href="mailto:demonhunterg@gmail.com">demonhunterg@gmail.com</a>
+                    <!-- mailto: thay cho http -->
+                </div>
+                <div id="icon-header">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-pinterest-square"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+            </div>
+
+            <div id="header-bottom">
+                <label id="icon-header-bottom" for="nav-mobile-input"><i
+                        class="bar-btn bar-btn fas fa-bars"></i></label>
+                <input type="checkbox" name="" class="nav-input" id="nav-mobile-input">
+                <img width="250" height="90" src="img/logo.png" class="header_logo" alt="Howello">
+
+                <nav class="nav__pc">
+                    <span class="text-homepage"><a href="https://vomyle.github.io/howello.io/index.html">Trang chủ</a></span>
+                    <span><a href="https://vomyle.github.io/howello.io/introduce.html">Giới thiệu</a></span>
+                    <span><a href="https://vomyle.github.io/howello.io/room.html" class="text-room">Phòng</a></span>
+                    <span><a href="https://vomyle.github.io/howello.io/news.html" class="text-news">Tin tức</a></span>
+                    <span class="text__contact--gold"><a href="https://vomyle.github.io/howello.io/contact.html">Liên hệ</a></span>
+                    <span><a href="labthuchanh.html">thuchanh</a></span>
+                    <i class="search-header fas fa-search">
+
+                        <div id="input-search">
+                            <input type="text" placeholder="tìm kiếm.....">
+
+                            <i class="fas fa-search"></i>
+            </div>
+            </i>
+
+            <button id="btn-setroom" class="btn btn-warning">Đặt phòng</button>
+            </nav>
+
+            <nav class="nav__tablet">
+
+                <div id="nav-tablet">
+                    <div id="input-search">
+                        <div class="input-parent"><input type="text" placeholder="Tìm kiếm....."></div>
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="nav-child__tablet">
+                        <span class="text-homepage"><a href="https://vomyle.github.io/howello.io/index.html"></a>Trang chủ</span>
+                        <span><a href="https://vomyle.github.io/howello.io/introduce.html">Giới thiệu</a></span>
+                        <span><a href="https://vomyle.github.io/howello.io/room.html" class="text-room">Phòng</a></span>
+                        <span><a href="https://vomyle.github.io/howello.io/news.html" class="text-news">Tin tức</a></span>
+                        <span class="text__contact--gold"><a href="https://vomyle.github.io/howello.io/contact.html">Liên hệ</a></span>
+                        <span><a href="labthuchanh.html">thuchanh</a></span>
+                        <span>Đăng nhập</span>
+                    </div>
+                    <div id="icon-header">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-pinterest-square"></i>
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="hollow"></div>
+            <label for="nav-mobile-input" class="nav-overlay">
+                    <i class="close fas fa-times"></i>
+                </label>
+        </div>
+        </div>
+    </section>
+    <section id="img-behind-header">
+        <img src="img/nhatrang.jpeg">
+        <div class="text-behind-header">
+            <h1>GIỚI THIỆU</h1>
+            <a href="https://vomyle.github.io/howello.io/index.html">TRANG CHỦ</a>
+            <span class="separator">/</span>
+            <span class="text-introduce-behindheader">GIỚI THIỆU</span>
+
+        </div>
+    </section>
+    <section id="room">
+        <div class="all-room-type">
+            <div class="row roomall">
+                <div class="col-lg-4 wow flipInX" data-wow-duration="0.2s" data-wow-delay="0.2s">
+                    <div class="img-hover">
+                        <img src="img/roomblue.jpg" alt="">
+                    </div>
+
+                    <h2>SILVER ROOM</h2>
+                    <div class="hollow"></div>
+                    <div class="room">
+                        <h3>
+                            <span>Giá:</span>
+                            <b>50$</b>
+                            <span>/1 đêm</span>
+                        </h3>
+                        <a href="" class="btn btn-warning">Xem Chi Tiết</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow flipInX" data-wow-duration="0.4s" data-wow-delay="0.2s">
+                    <div class="img-hover">
+                        <img src="img/roomwhite.jpg">
+                    </div>
+
+                    <h2>PLATINUM ROOM</h2>
+                    <div class="hollow"></div>
+                    <div class="room">
+                        <h3>
+                            <span>Giá:</span>
+                            <b>80$</b>
+                            <span>/1 đêm</span>
+                        </h3>
+                        <a href="" class="btn btn-warning">Xem Chi Tiết</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow flipInX" data-wow-duration="0.5s" data-wow-delay="0.2s">
+                    <div>
+                        <div class="img-hover">
+                            <img src="img/roomred.jpg">
+                        </div>
+
+                        <h2>BRONZE ROOM</h2>
+                        <div class="hollow"></div>
+                        <div class="room">
+                            <h3>
+                                <span>Giá:</span>
+                                <b>40$</b>
+                                <span>/1 đêm</span>
+                            </h3>
+                            <a href="" class="btn btn-warning">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="all-room-type">
+            <div class="row roomall">
+                <div class="col-lg-4 wow flipInX" data-wow-duration="0.5s">
+                    <div class="img-hover">
+                        <img src="img/roomblue.jpg" alt="">
+                    </div>
+
+                    <h2>SILVER ROOM</h2>
+                    <div class="hollow"></div>
+                    <div class="room">
+                        <h3>
+                            <span>Giá:</span>
+                            <b>50$</b>
+                            <span>/1 đêm</span>
+                        </h3>
+                        <a href="" class="btn btn-warning">Xem Chi Tiết</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow flipInX" data-wow-duration="0.5s">
+                    <div class="img-hover">
+                        <img src="img/roomwhite.jpg">
+                    </div>
+
+                    <h2>PLATINUM ROOM</h2>
+                    <div class="hollow"></div>
+                    <div class="room">
+                        <h3>
+                            <span>Giá:</span>
+                            <b>80$</b>
+                            <span>/1 đêm</span>
+                        </h3>
+                        <a href="" class="btn btn-warning">Xem Chi Tiết</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow flipInX" data-wow-duration="0.5s">
+                    <div>
+                        <div class="img-hover">
+                            <img src="img/roomred.jpg">
+                        </div>
+
+                        <h2>BRONZE ROOM</h2>
+                        <div class="hollow"></div>
+                        <div class="room">
+                            <h3>
+                                <span>Giá:</span>
+                                <b>40$</b>
+                                <span>/1 đêm</span>
+                            </h3>
+                            <a href="" class="btn btn-warning">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="row" id="footer">
+            <div class="col-md-6 col-sm-6">
+
+                <div class="">
+                    <img src="img/logo_footer.png" class="logo-footer">
+                    <p>Đến với Khu nghỉ dưỡng Premier Village Mona Media, quý khách sẽ được trải nghiệm dịch vụ Spa cao cấp, trung tâm thể hình hiện đại và các hoạt động giải trí trên biển</p>
+                    <div class="icon-logo-footer">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                </div>
+
+                <div id="contact" class="col-md-6">
+                    <div id="contact-child">
+                        <h5>liên hệ</h5>
+                        <div class="hollow"></div>
+                        <div id="address">
+                            <i class="fas fa-map-marker-times"></i>
+
+                            <p>319 C16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</p>
+
+                        </div>
+                        <div id="telephone">
+                            <i class="fas fa-tty"></i>
+                            <a href="tel:0769220162">076 922 0162</a>
+                        </div>
+                        <div id="email">
+                            <i class="fad fa-envelope-open"></i>
+                            <p>
+                                <a href="mailto:demonhunterg@gmail.com">demonhunterg@gmail.com</a>
+                                <br>
+                                <a href="mailto:mon@mona.media">mon@mona.media</a>
+                            </p>
+                        </div>
+                        <div id="chat">
+                            <i class="fab fa-skype"></i>
+                            <div>
+                                <a href="skype:demonhunterp?chat">demonhunterp</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6 col-sm-6 final-footer">
+
+                <div id="link">
+                    <div id="link-child">
+                        <h5>liên kết</h5>
+                        <div class="hollow"></div>
+                        <ul>
+                            <li class="text-homepage">Trang chủ</li>
+                            <li>Giới thiệu</li>
+                            <li>Cửa hàng</li>
+                            <li>Tin tức</li>
+                            <li>Liên hệ</li>
+                        </ul>
+                        <button class="btn btn-warning">Đặt phòng</button>
+                    </div>
+                </div>
+                <div class="img">
+                    <div class="img-child">
+                        <h5>hình ảnh</h5>
+                        <div class="hollow"></div>
+                        <div class="img-footer">
+                            <div>
+                                <img src="img/hinh2.png">
+                                <img src="img/hinh2.png">
+                                <img src="img/hinh2.png">
+                            </div>
+                            <div class="img-footer-child">
+                                <img src="img/hinh2.png">
+                                <img src="img/hinh2.png">
+                                <img src="img/hinh2.png">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- licensse:bản quyền -->
+        <div id="license">
+
+            <div class="license-child">
+                © Bản quyền thuộc về . Thiết kế website
+                <img src="http://mona-media.com/logo.png" alt="MonaMedia">
+                <a href=" " title="Mona Media"><strong>Mona Media</strong></a> </công>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
